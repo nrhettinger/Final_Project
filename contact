@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oldham County Parks and Recreation</title>
+	<link rel="stylesheet" href="C:\Users\n\Documents\CodeLouisville\Final Project\main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<h1>Lagrange, KY Community Center</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="community-center">Community Center</a></li>
+			<li><a href="aquatic-center">Aquatic Center</a></li>
+			<li><a href="programs-and-events">Programs and Events</a></li>
+			<li><a href="contact">Contact Us</a></li>
+		</ul>
+	</nav>
+	<div class="content">
+		<h1>Contact Oldham County Parks & Recreation Of La Grange, KY</h1>
+		<p> 
+			Address
+			1551 North Hwy 393 
+			La Grange,  KY   40031
+
+			Email
+			tcurtis@oldhamcounty.net
+			
+			Phone
+			502-225-0655 - Main Office and Community Center
+
+			Alt Phone
+			502-225-0656 - Aquatic Center Reservations
+
+			Business Hours
+			Office: Monday - Friday
+			8:00am – 4:30pm
+		</p>
+		<p>Our Community Center Services Include:</p>
+			<ul>
+				<li>
+					Event Venue -  Affordable yet elegant for your wedding reception, meeting, lecture or party
+				</li>
+				<li>
+					Rental time - Includes set-up and clean-up time.
+				</li>
+				<li>
+					Variety - Can be accommodated for groups from 60 - 320 people with or without tables
+				</li>
+				<li>
+					Backdrop - A serene woodsy setting without being rustic - simple yet elegant
+				</li>
+			</ul>
+		<p>
+			We now accept credit cards!
+			Our friendly and professional staff is here to answer any questions you may have about your upcoming event need or our event services Create a lasting memory of your next event.
+		</p>
+		<p>
+			<a href="contact.html" Contact Oldham County Parks & Recreation Department> today at 502-225-0655 and schedule your meeing or event or ask about our upcoming summer programs. Or browse our website for more information regarding our Aquatic Center or Programs and Events.
+		</p>
+	</div>	
+</body>
+
+</html>.
