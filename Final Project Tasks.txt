@@ -1,0 +1,24 @@
+Oldham County Parks and Recreation Website Update
+
+-Change the header to be a single image relevant to the content of each page. The title of the page will be in the image on top of transparent background.
+
+-Change the links in the body on the index to be image links with descriptions at the bottom each image.
+
+-Add a new link and page that lists the parks available in the county with a google map of their locations.
+
+-Add more information to the acquatic center page with the ability to book parties and events. 
+
+-Put a google map on the contact page.
+
+-Adjust the styling of the website so that it is optimized for all screen sizes.
+
+-Font and content styling updates.
+
+
+Website characteristics:
+
+- Audience: Residents of Oldham County and tourists.
+
+- Goal: To provide information and exposure for the Oldham County Acquatic Center and its parks.
+
+- Potential feature requests: booking/scheduling app, links to social media, google maps.
