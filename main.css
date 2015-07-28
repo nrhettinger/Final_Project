@@ -10,6 +10,9 @@ body {
  padding: 0;
  height: inherit;
  color: #999;
+ background-image: url('img/FinalProjectPhotos/MorganConservationPark/MorganConservationPark8.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 /*links*/
@@ -24,7 +27,8 @@ img {
 
 /*logo text*/
 h1, h2 {
-  color: #999
+  color: #999;
+  margin:0;
 }
 
 
@@ -47,6 +51,13 @@ h3 {
   display: block;
   width: 45%;
   text-align: inherit;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 100%;
+}
+
+.col-lg-6 img {
+  max-height: 100%
 }
 
 .right {
@@ -72,14 +83,17 @@ header {
   float: left;
   width: 100%;
   background-color: #FFECB0;
-  height: 300px;
+  height: 550px;
   margin: 0;
-  background-image: url('');
 }
 
-header h1 {
-color: #999;
-background-color: #FFECB0;
+.logo {
+  background: transparent;
+  color: white;
+  font-size: 40px;
+  margin: 35px;
+  margin-top: 90px;
+  font-family: 'Hoefler Text', verdana;
 }
 
 h2 {
@@ -142,23 +156,39 @@ footer{
   padding-top: 50px;
   color: #999;
 }
+
+/********************
+Page: Column Formatting
+********************/
+
+.col-lg-6 h3 {
+  margin: 0;
+  padding: 0;
+}
+
 /********************
 Page: Index
 ********************/
 
-.parks ul {
-    list-style: none;
-  }
-  
- .parks li {
-    list-style: none;
-    width: 45%;
-  }
-  
+.img-index{
+  background-image: url('img/FinalProjectPhotos/WendellMoorePark1.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
+.park ul {
+    list-style: none;
+  }
+  
 /********************
 Page: Community Center
 ********************/
+
+.img-community-center{
+  background-image: url('img/FinalProjectPhotos/CommunityCenter/CommunityCenter1.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
 #capacity {
   width: 450px;
