@@ -40,6 +40,7 @@ h3 {
   margin: 0 100px;
   overflow: auto;
   height: auto; 
+  position: inherit;
 }
 
 .col-lg-6 {
@@ -61,7 +62,9 @@ h3 {
   margin-left: 30px;
 }
 
-
+.barrier {
+  clear: both;
+}
 /********************
 Heading
 ********************/
@@ -69,8 +72,9 @@ header {
   float: left;
   width: 100%;
   background-color: #FFECB0;
-  height: 150px;
+  height: 300px;
   margin: 0;
+  background-image: url('');
 }
 
 header h1 {
@@ -91,8 +95,13 @@ Navigation
 nav {
   text-align: right;
   margin: 0;
+  margin-bottom: 0;
   background-color: #FFECB0;
-  background-image: url('')
+  height: 42px;
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  float: right;
 }
 
 
@@ -105,6 +114,7 @@ nav ul {
 nav li {
   display: inline-block;
   padding: 10px 35px 10px;
+  margin: 0;
 }
 
 nav a {
@@ -145,6 +155,18 @@ Page: Index
     width: 45%;
   }
   
+
+/********************
+Page: Community Center
+********************/
+
+#capacity {
+  width: 450px;
+  height: 350px;
+  margin-bottom: 20px;
+  text-align: left;
+  clear: both;
+}
 
 /********************
 Page: Contact
