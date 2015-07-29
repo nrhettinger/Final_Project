@@ -199,8 +199,25 @@ Page: Community Center
 }
 
 /********************
+Page: Aquatic Center
+********************/
+.img-aquatic-center {
+  background-image: url('img/FinalProjectPhotos/AquaticCenter/aquaticCenter12.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/********************
 Page: Contact
 ********************/
+
+.img-contact {
+  background-image: url('img/FinalProjectPhotos/WendellMoorePark4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+
+}
 
 .contact-info {
   list-style:none;
@@ -210,11 +227,20 @@ Page: Contact
 
 #map_wrapper {
     height: 300px;
+    color: black;
 }
 
 #map_canvas {
     width: 100%;
     height: 100%;
+}
+
+#map_canvas img {
+    max-width: none;
+}
+
+img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
+max-width: none !important;
 }
 
 .contact-info a {

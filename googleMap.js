@@ -18,18 +18,19 @@ function initialize() {
         
     // Multiple Markers
     var markers = [
-        ['London Eye, London', 51.503454,-0.119562],
-        ['Palace of Westminster, London', 51.499633,-0.124755]
+        ['Westport Park', 38.478192,-85.479931],
+        ['Morgan Conservation Park', 38.496079,-85.382663]
     ];
                         
     // Info Window Content
     var infoWindowContent = [
         ['<div class="info_content">' +
-        '<h3>London Eye</h3>' +
-        '<p>The London Eye is a giant Ferris wheel situated on the banks of the River Thames. The entire structure is 135 metres (443 ft) tall and the wheel has a diameter of 120 metres (394 ft).</p>' +        '</div>'],
+        '<h3>Westport Park</h3>' +
+        '<p>Located on the Ohio River, Westport Park features boat docks, a playground, pavilion and plenty of green space. Wonderful views of the river!</p>' +
+        '</div>'],
         ['<div class="info_content">' +
-        '<h3>Palace of Westminster</h3>' +
-        '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
+        '<h3>Morgan Conservation Park</h3>' +
+        '<p>A nature preserve featuring trails, a pavilion and abundant wildlife. Perfect for hiking!</p>' +
         '</div>']
     ];
         
@@ -60,7 +61,7 @@ function initialize() {
 
     // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-        this.setZoom(14);
+        this.setZoom(10);
         google.maps.event.removeListener(boundsListener);
     });
     
