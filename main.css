@@ -10,7 +10,7 @@ body {
  padding: 0;
  height: inherit;
  color: #999;
- background-image: url('img/FinalProjectPhotos/MorganConservationPark/MorganConservationPark8.jpg');
+ background-image: url('img/FinalProjectPhotos/BodyBackground.jpg');
  background-repeat: no-repeat;
  background-size: cover;
 }
@@ -38,35 +38,24 @@ h3 {
 
 .content {
   background-color: #FFFFC8;
-  padding-top: 8px;
+  padding-top: 16px;
   padding-left: 30px;
   padding-right: 30px;
-  margin: 0 100px;
   overflow: auto;
-  height: auto; 
-  position: inherit;
+  position: auto;
+  margin-top: 0;
+  clear: both;
 }
 
 .col-lg-6 {
-  display: block;
-  width: 45%;
-  text-align: inherit;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  height: 100%;
+  list-style: none;
+  margin: 10px 0px;
 }
 
 .col-lg-6 img {
   max-height: 100%
 }
 
-.right {
-  float: right;
-}
-
-.left {
-  float: left;
-}
 
 .center {
   margin-right: 30px;
@@ -83,17 +72,18 @@ header {
   float: left;
   width: 100%;
   background-color: #FFECB0;
-  height: 550px;
+  height: 350px;
   margin: 0;
 }
 
 .logo {
   background: transparent;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   margin: 35px;
   margin-top: 90px;
   font-family: 'Hoefler Text', verdana;
+  text-shadow: 2px 4px 0px rgba(0,0,0,0.5);, 
 }
 
 h2 {
@@ -107,38 +97,37 @@ Navigation
 ********************/
 
 nav {
-  text-align: right;
-  margin: 0;
-  margin-bottom: 0;
   background-color: #FFECB0;
   height: 42px;
   display: inline-block;
-  width: 100%;
   padding: 0;
-  float: right;
+  margin: 0;
+  overflow: none;
+  width: 100%;
+  float: left;
+  text-align: center;
 }
-
 
 nav ul {
   list-style: none;
   overflow: auto;
   margin: 0;
+  
 }
 
-nav li {
-  display: inline-block;
-  padding: 10px 35px 10px;
+nav ul li {
+  display: inline;
+  padding: 15px 15px;
+  position: inherit;
   margin: 0;
 }
 
 nav a {
   font-weight: bold;
+  color: #000;
+  display: inline-block;
   }
 
-  /*Nav links*/
-nav a, nav a:visited {
-  color: #000;
-}
 
 /*selected nav link*/
 nav a.selected, nav a:hover {
@@ -171,14 +160,11 @@ Page: Index
 ********************/
 
 .img-index{
-  background-image: url('img/FinalProjectPhotos/WendellMoorePark1.jpg');
-  background-size: 100%;
+  background-image: url('img/FinalProjectPhotos/WestportPark7-reduced - Copy.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.park ul {
-    list-style: none;
-  }
   
 /********************
 Page: Community Center
@@ -186,7 +172,7 @@ Page: Community Center
 
 .img-community-center{
   background-image: url('img/FinalProjectPhotos/CommunityCenter/CommunityCenter1.jpg');
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -203,7 +189,7 @@ Page: Aquatic Center
 ********************/
 .img-aquatic-center {
   background-image: url('img/FinalProjectPhotos/AquaticCenter/aquaticCenter12.jpg');
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -212,17 +198,10 @@ Page: Contact
 ********************/
 
 .img-contact {
-  background-image: url('img/FinalProjectPhotos/WendellMoorePark4.jpg');
+  background-image: url('img/FinalProjectPhotos/MorganConservationPark3-reduced.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
-
-}
-
-.contact-info {
-  list-style:none;
-  padding: 0;
-  margin: 0;
 }
 
 #map_wrapper {
@@ -239,29 +218,99 @@ Page: Contact
     max-width: none;
 }
 
-img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
-max-width: none !important;
+.googleMap {
+  margin-top: 40px;
 }
 
-.contact-info a {
-  display:block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
+/********************
+Media Queries
+********************/
+
+@media (max-width: 432px) {
+  
+  header {
+    height: 300px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
 }
 
-.contact-info li.phone a {
-  background-image: url('../img/phone.png');
+@media (min-width: 768px) {
+  
+  body{
+    margin: 30px 60px;
+  }
+
+  header {
+    height: 370px;
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav li {
+    padding: auto;
+  }
+
+  .col-lg-6 {
+    display: block;
+    width: 45%;
+    text-align: inherit;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 100%;
+  }
+
+  .right {
+  float: right;
+  }
+
+  .left {
+    float: left;
+  }
+
 }
 
-.contact-info li.mail a {
-  background-image: url('../img/mail.png');
+@media (min-width: 900px) {
+
+  header {
+    height: 420px;
+  }
+
 }
 
-.contact-info li.twitter a {
-  background-image: url('../img/twitter.png');
+@media (min-width: 1026px) {
+
+  nav ul li {
+    display: inline-block;
+    padding: 10px 35px ;
+    margin: 0;
+  }
+
+  header{
+    height: 480px;
+  }
+  
+}
+
+@media (min-width: 1220px) {
+
+  body {
+    margin: 2.5% 10%;
+  }
+
+  header {
+    height: 500px;
+  }
+
 }
 
 

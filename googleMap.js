@@ -19,7 +19,9 @@ function initialize() {
     // Multiple Markers
     var markers = [
         ['Westport Park', 38.478192,-85.479931],
-        ['Morgan Conservation Park', 38.496079,-85.382663]
+        ['Morgan Conservation Park', 38.496079,-85.382663],
+        ['Wendell Moore Park', 38.393796,-85.436903],
+        ['Peggy Baker Park', 38.326097,-85.434766]
     ];
                         
     // Info Window Content
@@ -30,6 +32,14 @@ function initialize() {
         '</div>'],
         ['<div class="info_content">' +
         '<h3>Morgan Conservation Park</h3>' +
+        '<p>A nature preserve featuring trails, a pavilion and abundant wildlife. Perfect for hiking!</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>Wendell Moore Park</h3>' +
+        '<p>A versatile park with a large play area, two pavilions and basketball and tennis courts. Great place for a reunion or get toegether!</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>Peggy Baker Park</h3>' +
         '<p>A nature preserve featuring trails, a pavilion and abundant wildlife. Perfect for hiking!</p>' +
         '</div>']
     ];
@@ -58,6 +68,11 @@ function initialize() {
         // Automatically center the map fitting all markers on the screen
         map.fitBounds(bounds);
     }
+
+    //closes the info window when someone clicks somewhere else on the map
+    google.maps.event.addListener(map, 'click', function() {
+        infoWindow.close();
+    });
 
     // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
