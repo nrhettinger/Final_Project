@@ -21,27 +21,37 @@ function initialize() {
         ['Westport Park', 38.478192,-85.479931],
         ['Morgan Conservation Park', 38.496079,-85.382663],
         ['Wendell Moore Park', 38.393796,-85.436903],
-        ['Peggy Baker Park', 38.326097,-85.434766]
+        ['Peggy Baker Park', 38.324421, -85.434157],
+        ['Briar Hill Park', 38.322720, -85.514611]
     ];
                         
     // Info Window Content
     var infoWindowContent = [
         ['<div class="info_content">' +
         '<h3>Westport Park</h3>' +
+        '<p>Address: 6617 Mainstreet Westport, KY 40077</p>' +
         '<p>Located on the Ohio River, Westport Park features boat docks, a playground, pavilion and plenty of green space. Wonderful views of the river!</p>' +
         '</div>'],
         ['<div class="info_content">' +
         '<h3>Morgan Conservation Park</h3>' +
+        '<p>Address: 1200 E Hwy 524 Lagrange, KY 40031</p>' +
         '<p>A nature preserve featuring trails, a pavilion and abundant wildlife. Perfect for hiking!</p>' +
         '</div>'],
         ['<div class="info_content">' +
-        '<h3>Wendell Moore Park</h3>' +
+        '<h3>Aquatic Center / OC Parks and Rec / Wendell Moore Park</h3>' +
+        '<p>Address: 1551 N. Hwy 393 Lagrange, KY 40031</p>' +
         '<p>A versatile park with a large play area, two pavilions and basketball and tennis courts. Great place for a reunion or get toegether!</p>' +
         '</div>'],
         ['<div class="info_content">' +
         '<h3>Peggy Baker Park</h3>' +
-        '<p>A nature preserve featuring trails, a pavilion and abundant wildlife. Perfect for hiking!</p>' +
-        '</div>']
+        '<p>Address: 6914 Rte 2858 Crestwood, KY 40014</p>' +
+        '<p>A ballpark with 4 large fields, 2 small fields with a playground and pavilion. Home to the South Oldham Little League. Come catch a game!</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>Briar Hill Park</h3>' +
+        '<p>Address: 7407 E Orchard Grass Blvd Crestwood, KY 40014</p>' +
+        '<p>A community park with a playground, pavilion, walking trails, basketball and tennis courts.</p>' +
+        '</div>'],
     ];
         
     // Display multiple markers on a map

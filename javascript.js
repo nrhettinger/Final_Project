@@ -1,7 +1,7 @@
 //javaScript for the index page
 
-$("#menu").click(function(){
-	$('#navList').toggle();
+$("#mobile-menu").click(function(){
+	$('#nav-list').toggle();
 })
 
 

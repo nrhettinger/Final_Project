@@ -4,7 +4,7 @@ General
 
 body {
  font-family: 'Open Sans', sans-serif;
- font-size: 1.20em;
+ font-size: 1.1em;
  background-color: #59F159;
  margin: 0;
  padding: 0;
@@ -21,16 +21,11 @@ a {
   color: #66FF99;
 }
 
-img {
-  max-width: 100%;
-}
-
 /*logo text*/
 h1, h2 {
   color: #999;
   margin:0;
 }
-
 
 h3 {
   margin: 0 0 1em 0;
@@ -47,15 +42,20 @@ h3 {
   clear: both;
 }
 
+img {
+  border-radius: 40px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.extra-img {
+  display: none;
+}
+
 .col-lg-6 {
   list-style: none;
   margin: 10px 0px;
 }
-
-.col-lg-6 img {
-  max-height: 100%
-}
-
 
 .center {
   margin-right: 30px;
@@ -64,6 +64,8 @@ h3 {
 
 .barrier {
   clear: both;
+  margin: 0.5em 0px;
+  overflow: auto;
 }
 /********************
 Heading
@@ -98,40 +100,55 @@ Navigation
 
 nav {
   background-color: #FFECB0;
-  height: 42px;
+  height: 2.5em;
   display: inline-block;
   padding: 0;
   margin: 0;
   overflow: none;
   width: 100%;
+  text-align: justify;
   float: left;
-  text-align: center;
 }
 
 nav ul {
+  display: block;
   list-style: none;
-  overflow: auto;
-  margin: 0;
-  
+  overflow: none;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  text-align: center;
 }
 
 nav ul li {
-  display: inline;
-  padding: 15px 15px;
-  position: inherit;
-  margin: 0;
-}
+  display: inline-block;
+  padding: .69em .8em;
+  }
 
 nav a {
   font-weight: bold;
-  color: #000;
-  display: inline-block;
+  color: #999;
   }
-
 
 /*selected nav link*/
 nav a.selected, nav a:hover {
   color: #66FF99;
+}
+
+#nav-list {
+  display: none;
+}
+
+.current {
+  color: #000;
+}
+
+#mobile-menu{
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  margin: .55em 0em;
 }
 
 /********************
@@ -160,7 +177,7 @@ Page: Index
 ********************/
 
 .img-index{
-  background-image: url('img/FinalProjectPhotos/WestportPark7-reduced - Copy.jpg');
+  background-image: url('img/FinalProjectPhotos/WestportPark/WestportPark7-reduced - Copy.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -171,17 +188,17 @@ Page: Community Center
 ********************/
 
 .img-community-center{
-  background-image: url('img/FinalProjectPhotos/CommunityCenter/CommunityCenter1.jpg');
+  background-image: url('img/FinalProjectPhotos/CommunityCenter/CommunityCenter5.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #capacity {
-  width: 450px;
-  height: 350px;
-  margin-bottom: 20px;
-  text-align: left;
-  clear: both;
+  height: auto;
+  width: auto;
+  border-radius: 0px;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /********************
@@ -198,7 +215,7 @@ Page: Contact
 ********************/
 
 .img-contact {
-  background-image: url('img/FinalProjectPhotos/MorganConservationPark3-reduced.jpg');
+  background-image: url('img/FinalProjectPhotos/MorganConservationPark/MorganConservationPark3-reduced.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -212,6 +229,7 @@ Page: Contact
 #map_canvas {
     width: 100%;
     height: 100%;
+    border-radius: 35px;
 }
 
 #map_canvas img {
@@ -220,6 +238,45 @@ Page: Contact
 
 .googleMap {
   margin-top: 40px;
+}
+
+.gm-style-iw {
+max-width: 20em;
+}
+
+form {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+input{
+  display: inline;
+  width: 100%;
+  margin: .7em 0em;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: .7em;
+}
+
+#submit {
+  width: 4.5em;
+  height: 2em;
+  font-weight: bold;
+  border-width: 2px;
+  background-color: #FFECB0;
+  border: solid;
+  color: #999;
+  margin-top: 1em;
+  text-align: center;
+  font-size: .95em;
+}
+
+#submit:hover {
+  border-color: #66FF99;
+  cursor: pointer;
 }
 
 /********************
@@ -236,13 +293,17 @@ Media Queries
     font-size: 20px;
   }
 
+  .youtube {
+    height: 275px;
+  }
+
+  #map_wrapper {
+    display: none;
+}
+
 }
 
 @media (min-width: 768px) {
-  
-  body{
-    margin: 30px 60px;
-  }
 
   header {
     height: 370px;
@@ -252,21 +313,28 @@ Media Queries
     font-size: 40px;
   }
 
-  nav {
-    text-align: center;
-  }
-
-  nav li {
-    padding: auto;
-  }
-
   .col-lg-6 {
     display: block;
     width: 45%;
     text-align: inherit;
     margin-bottom: 10px;
     margin-top: 10px;
-    height: 100%;
+  }
+
+  .col-lg-3 {
+    display: block;
+    width: 38%;
+    text-align: inherit;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .col-lg-9 {
+    display: block;
+    width: 60%;
+    text-align: inherit;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   .right {
@@ -277,11 +345,69 @@ Media Queries
     float: left;
   }
 
+  .col-center {
+    margin-top: 6.7%;
+  }
+
+  #nav-list {
+  display: block;
+  }
+
+  #mobile-menu{
+    display: none;
+  }
+
+  /********************
+  Contact
+  ********************/
+
+  form div {
+    display: block;
+    clear: both;
+  }
+
+  label{
+    margin-right: 2%;
+    margin-top: 12px;
+    float: left;
+    display: block;
+    width: 20%;
+  }
+
+  input{
+    width: 70%;
+    height: 25px;
+  }
+
+  textarea {
+    width: 70%;
+  }
+
+  #map_wrapper {
+    height: 380px;
+    color: black;
+}
+
 }
 
 @media (min-width: 900px) {
 
+  body {
+    margin: 80px 60px;
+  }
+
+  .content {
+    border-bottom-right-radius: 130px;
+    border-bottom-left-radius: 130px;
+  }
+
   header {
+    height: 420px;
+    border-top-right-radius: 130px;
+    border-top-left-radius: 130px;
+  }
+
+  .youtube{
     height: 420px;
   }
 
@@ -289,10 +415,9 @@ Media Queries
 
 @media (min-width: 1026px) {
 
-  nav ul li {
-    display: inline-block;
-    padding: 10px 35px ;
-    margin: 0;
+  body {
+    font-size: 1.2em;
+    margin: 2.5% 10%;
   }
 
   header{
@@ -305,11 +430,103 @@ Media Queries
 
   body {
     margin: 2.5% 10%;
+    font-size: 1.3em;
   }
 
   header {
     height: 500px;
   }
+
+  .youtube {
+    height: 480px;
+  }
+
+@media (min-width: 1400px){
+
+  body {
+    font-size: 1.5em;
+  }
+
+}
+
+@media (min-width: 1600px){
+
+  .content {
+    padding: 50px 120px;
+  }
+
+  .barrier {
+    margin: 2em 0em;
+  }
+}
+
+@media (min-width: 1800px){
+
+  header {
+    height: 24em;
+  }
+
+  body {
+    font-size: 1.7em;
+  }
+
+   .youtube {
+    height: 600px;
+  }
+
+  /********************
+  Contact
+  ********************/
+
+   #map_wrapper {
+    height: 500px;
+  }
+
+}
+
+@media (min-width: 2100px){
+
+  body {
+    font-size: 1.9em;
+  }
+}
+
+@media (min-width: 2300px){
+
+  body {
+    font-size: 2.1em;
+  }
+}
+
+@media (min-width: 2500px){
+
+  body {
+    font-size: 2.3em;
+  }
+}
+
+@media (min-width: 2700px){
+
+  body {
+    font-size: 2.5em;
+  }
+
+  /********************
+  Contact
+  ********************/
+
+   #map_wrapper {
+    height: 700px;
+  }
+
+}
+
+@media (min-width: 2900px){
+
+  body {
+    font-size: 2.7em;
+  }
+}
 
 }
 

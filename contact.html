@@ -4,25 +4,27 @@
 	<title>Oldham County Parks and Recreation</title>
 	<link rel="stylesheet" href="main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="googleMap.js"></script>
 </head>
 <body>
 	<header class="img-contact">
 		<h1 class="logo">Contact</h1>
 	</header>
 	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="community-center.html">Community Center</a></li>
-			<li><a href="aquatic-center.html">Aquatic Center</a></li>
-			<li><a href="contact.html">Contact Us</a></li>
-		</ul>
+		<a href="#nav-list"><div id="mobile-menu">Menu</div></a>
+			<span>
+				<ul id="nav-list">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="community-center.html">Community Center</a></li>
+					<li><a href="aquatic-center.html">Aquatic Center</a></li>
+					<li><a class="current" href="contact.html">Contact Us</a></li>
+				</ul>
+			</span>
 	</nav>
 	<div class="content">
 		<p>
 			You can reach us through the methods listed below. If you have comments or questions, please fill out the form below. In addition to our La Grange Community & Acquatic Center, we have 4 additional parks. Reservations for all five parks can be made through our main number. Find us on <a href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F32517591309%2F">facebook</a> and <a href="https://twitter.com/oldhamcoparks">twitter</a>!
 		</p>
-		<div class="col-lg-6 left"
+		<div class="col-lg-3 left"
 			<ul> 
 				<li>
 				<h2>Address</h2>
@@ -53,9 +55,33 @@
 			</ul>			
 		</div>
 		<div class="clear"></div>
-		<div class="col-lg-6 right googleMap" id="map_wrapper">
+		<div class="col-lg-9 right googleMap" id="map_wrapper">
 			<div id="map_canvas" class="mapping"></div>
 		</div>
+		<div class="barrier"></div>
+		<p>
+			Questions, comments or concerns? We want to hear from you! Please use the contact form below and we will get back with you promptly.
+		</p>
+		<div class="barrier"></div>
+		<form>
+			<div>
+				<label>Name</label>
+				<input type="text" id="name" name="name">
+			</div>
+			<div>
+				<label>Email</label>
+				<input type="email" id="email" name="email">
+			</div>
+			<div>
+				<label>Phone Number</label>
+				<input type="telephone" id="phone" name="phone">
+			</div>
+			<div>
+				<label>Comments</label>
+				<textarea id="comments" name="comments"></textarea>
+			</div>
+			<button type="submit" id="submit">Submit</button>
+		</form>
 		<footer>
 			<p>
 				Our friendly and professional staff is here to answer any questions you may have about your upcoming event need, our services or programs.Whatever your venue needs, we can provide it to you at prices you can afford.  For more information, you can also visit us at <a href="www.oldhamcounty.net">oldamcounty.net</a>.
@@ -72,6 +98,7 @@
 	</div>	
 	<script src="javascript.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="googleMap.js"></script>
 </body>
 
-</html>.
+</html>
