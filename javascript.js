@@ -1,22 +1,30 @@
-//javaScript for the index page
+//javaScript for the mobile menu
+//javascript for the mobile menu
 
 $("#mobile-menu").click(function(){
-	$('#nav-list').toggle();
-})
-
-
-
-
-
-
-//javaScript for the form on the contact page
-
-$("input").click(function(){
-	$(this).css({"border": "solid", "border-width": "3px", "border-color": "#66FF99"});
-	if ( $("input").not( (this) ) ) {
-		$("input").(this).css({"border-width": "1px", "border-color": "black"});
+	var visible = true;
+	if (visible = true) {
+		$("#nav-list").slideToggle(300);
 	}
-})
+});
+
+$(window).resize(function(){
+	if(window.innerWidth > 768) {
+		$("#nav-list").removeAttr("style");
+	}
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
